@@ -1,46 +1,73 @@
+* {
+    /* *using these to override browser CSS. Don't want to use * selector in this project */
+    margin: 0;
+    padding: 0;
+}
+
 body {
-	font-family: 'Poppins', sans-serif;
-	font-size: 15px;
-	color: hsl(234, 12%, 34%);
-	margin: auto;
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    color: hsl(234, 12%, 34%);
+    margin: auto;
 }
 
 .heading {
-	margin: 60px auto;
-	text-align: center;
+    margin: 45px auto;
+    text-align: center;
 }
+
 .head {
-	font-weight: 200;
-	/* *using these to override browser CSS. Don't want to use * selector in this project */
-	margin-top: 0;
-	margin-bottom: 0;
+    font-weight: 200;
 }
+
 .subhead {
-	font-weight: 600;
-	margin-top: 0;
-	margin-bottom: 0;
+    font-weight: 600;
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
 .container {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-
-
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .item {
-	width: 350px;
-	height: 233px;
-	border: 3px solid gray;
-	margin: 15px;
+    width: 300px;
+    height: 200px;
+    border: 3px solid hsl(0, 0%, 98%);
+    /* offset-x | offset-y | blur-radius | color */
+    /* box-shadow: ; */
+    border-radius: 5px;
+    margin: 15px;
+}
 
+.item h3 {
+    padding: 15px;
+}
 
+.item p {
+    padding-left: 15px;
+    padding-bottom: 20px;
 }
 
 .inner-col {
-	display: flex;
-	flex-direction: column;
+    display: flex;
+    flex-direction: column;
 }
 
+#super {
+    border-top: 3px solid hsl(180, 62%, 55%);
+}
 
+#teambuild {
+    border-top: 3px solid hsl(0, 78%, 62%);
+}
+
+#karma {
+    border-top: 3px solid hsl(34, 97%, 64%);
+}
+
+#calc {
+    border-top: 3px solid hsl(212, 86%, 64%);
+}
