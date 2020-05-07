@@ -61,6 +61,16 @@ p {
 .inner-col {
     display: flex;
     flex-direction: column;
+
+
+}
+
+img {
+    width: 45px;
+    height: 45px;
+    position: relative;
+    left: 230px;
+    padding-right: 20px;
 }
 
 img {
