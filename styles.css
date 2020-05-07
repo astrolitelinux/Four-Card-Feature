@@ -1,5 +1,5 @@
 * {
-    /* *using these to override browser CSS. Don't want to use * selector in this project */
+    /* *using these to override browser CSS */
     margin: 0;
     padding: 0;
 }
@@ -8,11 +8,13 @@ body {
     font-family: 'Poppins', sans-serif;
     font-size: 15px;
     color: hsl(234, 12%, 34%);
+    width: 1440px;
     margin: auto;
+    overflow-x: hidden;
 }
 
 .heading {
-    margin: 45px auto;
+    margin: 60px auto 45px auto;
     text-align: center;
 }
 
@@ -22,8 +24,12 @@ body {
 
 .subhead {
     font-weight: 600;
-    margin-top: 0;
-    margin-bottom: 0;
+    margin-bottom: 20px;
+}
+
+p {
+    color: hsl(229, 6%, 66%);
+    font-size: 12px;
 }
 
 .container {
@@ -35,20 +41,21 @@ body {
 .item {
     width: 300px;
     height: 200px;
-    border: 3px solid hsl(0, 0%, 98%);
+    border: 1px solid hsl(0, 0%, 98%);
     /* offset-x | offset-y | blur-radius | color */
-    /* box-shadow: ; */
+    box-shadow: 5px 10px 45px -32px rgb(30, 105, 190);
     border-radius: 5px;
-    margin: 15px;
+    margin: 9px;
+    flex-shrink: 0;
 }
 
 .item h3 {
-    padding: 15px;
+    padding: 20px 20px 15px 20px;
 }
 
 .item p {
-    padding-left: 15px;
-    padding-bottom: 20px;
+    padding: 0px 40px 30px 20px;
+    line-height: 1.75em;
 }
 
 .inner-col {
@@ -56,12 +63,22 @@ body {
     flex-direction: column;
 }
 
+img {
+    width: 45px;
+    height: 45px;
+    position: relative;
+    left: 230px;
+    padding-right: 20px;
+}
+
 #super {
     border-top: 3px solid hsl(180, 62%, 55%);
+    margin-top: 0;
 }
 
 #teambuild {
     border-top: 3px solid hsl(0, 78%, 62%);
+    margin-top: 0;
 }
 
 #karma {
@@ -70,4 +87,17 @@ body {
 
 #calc {
     border-top: 3px solid hsl(212, 86%, 64%);
+    margin-top: 0;
+}
+
+footer {
+    margin-top: 100px;
+    margin-bottom: 10px;
+}
+
+@media only screen and (max-width: 1000px) {
+    body {
+        width: 1200px;
+        overflow-x: scroll;
+    }
 }
