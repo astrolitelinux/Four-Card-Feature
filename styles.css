@@ -1,20 +1,20 @@
 * {
     /* using these to override browser CSS */
-    margin : 0;
+    margin: 0;
     padding: 0;
 }
 
 body {
     font-family: 'Poppins', sans-serif;
     font-size  : 15px;
-    color     : hsl(234, 12%, 34%);
-    width     : 1440px;
-    margin    : auto;
+    color: hsl(234, 12%, 34%);
+    width: 1440px;
+    margin: auto;
     overflow-x: hidden;
 }
 
 .heading {
-    margin    : 100px auto 45px auto;
+    margin: 100px auto 45px auto;
     text-align: center;
 }
 
@@ -23,31 +23,31 @@ body {
 }
 
 .subhead {
-    font-weight  : 600;
+    font-weight: 600;
     margin-bottom: 20px;
 }
 
 p {
-    color    : hsl(229, 6%, 66%);
+    color: hsl(229, 6%, 66%);
     font-size: 12px;
 }
 
 .container {
-    display        : flex;
+    display: flex;
     justify-content: center;
-    align-items    : center;
+    align-items: center;
 }
 
 .item {
     /** Design has ~1.45 aspect ratio */
-    width        : 320px;
-    height       : 220px;
-    border       : 1px solid hsl(0, 0%, 98%);
+    width: 320px;
+    height: 220px;
+    border: 1px solid hsl(0, 0%, 98%);
     /* offset-x | offset-y | blur-radius | color */
-    box-shadow   : 5px 10px 45px -32px rgb(30, 105, 190);
+    box-shadow: 5px 10px 45px -32px rgb(30, 105, 190);
     border-radius: 5px;
-    margin       : 9px;
-    flex-shrink  : 0;
+    margin: 9px;
+    flex-shrink : 0;
 }
 
 .item h3 {
@@ -55,29 +55,29 @@ p {
 }
 
 .item p {
-    padding    : 0px 40px 30px 20px;
+    padding: 0px 40px 30px 20px;
     line-height: 1.75em;
 }
 
 .inner-col {
-    display       : flex;
+    display: flex;
     flex-direction: column;
 }
 
 img {
-    width        : 45px;
-    height       : 45px;
-    position     : relative;
-    left         : 230px;
+    width: 45px;
+    height: 45px;
+    position: relative;
+    left: 230px;
     padding-right: 20px;
 }
 
 img {
-    width        : 45px;
-    height       : 45px;
-    position     : relative;
-    left         : 250px;
-    top          : 20px;
+    width: 45px;
+    height: 45px;
+    position: relative;
+    left: 250px;
+    top: 20px;
     padding-right: 20px;
 
 
@@ -114,7 +114,7 @@ footer {
 
 @media only screen and (max-width: 1000px) {
     body {
-        width     : 1200px;
+        width: 1200px;
         overflow-x: scroll;
     }
 }
